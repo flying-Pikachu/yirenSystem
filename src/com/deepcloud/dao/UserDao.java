@@ -9,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 /**
  * @ Author     ：xzp.
@@ -29,7 +30,7 @@ public class UserDao {
         return true;
     }
 
-    public void findUserByIdTest() throws IOException {
+    public void findAllUsers() throws IOException {
 
         // mybatis配置文件
         String resource = "SqlMapConfig.xml";
@@ -48,9 +49,9 @@ public class UserDao {
         // 第二个参数：指定和映射文件中所匹配的parameterType类型的参数
         // sqlSession.selectOne结果 是与映射文件中所匹配的resultType类型的对象
         // selectOne查询出一条记录
-        User user = sqlSession.selectOne("test.findUserById", 1);
-
-        System.out.println(user);
+        List<User> list = sqlSession.selectList("test.findAllUsers");
+        for (User user : list)
+            System.out.println(user);
 
         // 释放资源
         sqlSession.close();

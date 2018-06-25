@@ -30,7 +30,19 @@ public void after() throws Exception {
 @Test
 public void testIsManager() throws Exception { 
 //TODO: Test goes here...
-    UserDao.isManager("1");
+
+} 
+
+/** 
+* 
+* Method: findAllUsers() 
+* 
+*/ 
+@Test
+public void testFindAllUsers() throws Exception { 
+//TODO: Test goes here...
+    UserDao userDao = new UserDao();
+    userDao.findAllUsers();
 } 
 
 
