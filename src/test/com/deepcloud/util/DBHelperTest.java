@@ -30,6 +30,8 @@ public void after() throws Exception {
 @Test
 public void testConn() throws Exception { 
 //TODO: Test goes here...
+    if (DBHelper.conn() != null)
+        System.out.println("fsdfsd");
     System.out.println(DBHelper.conn());
 } 
 

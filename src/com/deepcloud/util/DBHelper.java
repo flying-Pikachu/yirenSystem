@@ -1,13 +1,7 @@
-package com.studentDemo.util;
+package com.deepcloud.util;
 
-import com.studentDemo.been.Student;
-
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.util.Properties;
 
 public class DBHelper {
 
