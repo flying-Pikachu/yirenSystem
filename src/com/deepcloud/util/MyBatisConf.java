@@ -24,13 +24,10 @@ public class MyBatisConf {
      * description: 通过xml以及提供的参数，返回需要的类型
      * create time: 下午12:56 2018/6/25
      *
-     * @param loc xml 的路径
-     * @param args 执行sql语句所需要的参数
-     * @param c 返回列表的泛型类型
      * @return java.util.List<T>
      * @throws IOException 当没有找到配置文件的时候
      */
-    public static <T>SqlSession getSession(Class<T> c, String loc, String ...args) {
+    public static SqlSession getSession() {
         // mybatis配置文件
         String resource = "SqlMapConfig.xml";
         // 得到配置文件流
@@ -49,6 +46,19 @@ public class MyBatisConf {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         return sqlSession;
+    }
+
+    /**
+     * create by: xzp
+     * description:
+     * create time: 下午2:49 2018/6/25
+     *
+     * @param c 想要得到的对象的类型
+     * @return T 返回对象的泛型
+     */
+    public static <T>T getMapper(Class<T> c) {
+        SqlSession sqlSession = getSession();
+        return sqlSession.getMapper(c);
     }
 
     /**
