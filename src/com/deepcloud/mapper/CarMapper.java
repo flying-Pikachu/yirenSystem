@@ -53,4 +53,10 @@ public interface CarMapper {
      * @return java.util.List<T> 返回全部的用户信息
      */
     List<Car> findAllCars();
+
+    /**
+     * 根据车辆的品牌，最低最高价格，查询所有的车辆信息
+     * @return java.util.List<T> 返回全部的用户信息
+     */
+    List<Car> findAllCarsByBrandAndPrice(@Param("carBrand") String carBrand, @Param("lowPrice") double lowPrice, @Param("highPrice") double highPrice);
 }

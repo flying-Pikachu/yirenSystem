@@ -14,7 +14,7 @@ public class Orders {
     private String userName;
     private Date pickupTime;
     private Date returnTime;
-    private boolean orderStatus;
+    private int orderStatus;
     private double orderCost;
 
 
@@ -22,7 +22,7 @@ public class Orders {
 
     }
 
-    public Orders(String orderNum, String carID, String userName, Date pickupTime, Date returnTime, boolean orderStatus, double orderCost) {
+    public Orders(String orderNum, String carID, String userName, Date pickupTime, Date returnTime, int orderStatus, double orderCost) {
         this.orderNum = orderNum;
         this.carID = carID;
         this.userName = userName;
@@ -72,11 +72,11 @@ public class Orders {
         this.returnTime = returnTime;
     }
 
-    public boolean isOrderStatus() {
+    public int getOrderStatus() {
         return orderStatus;
     }
 
-    public void setOrderStatus(boolean orderStatus) {
+    public void setOrderStatus(int orderStatus) {
         this.orderStatus = orderStatus;
     }
 

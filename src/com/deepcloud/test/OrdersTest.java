@@ -26,13 +26,13 @@ public class OrdersTest {
         for (Orders cc : carMapper.findAllOrdersByUserName("1"))
             System.out.println(cc);
         try {
-            carMapper.insertOrder(new Orders("5", "5", "1", new Date(), new Date(), true, 5.0));
+            carMapper.insertOrder(new Orders("5", "5", "1", new Date(), new Date(), 1, 5.0));
         } catch (Exception e) {
             e.printStackTrace();
         }
         Orders orders = carMapper.selectOrderById("5");
         System.out.println(orders);
-        carMapper.updateOrder(new Orders("5", "5", "1", new Date(), new Date(), false, 5.0));
+        carMapper.updateOrder(new Orders("5", "5", "1", new Date(), new Date(), 1, 5.0));
         System.out.println(carMapper.selectOrderById("5"));
         carMapper.deleteOrder("5");
         for (Orders cc : carMapper.findAllOrders())

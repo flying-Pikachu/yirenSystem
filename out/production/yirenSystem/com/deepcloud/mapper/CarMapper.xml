@@ -17,6 +17,17 @@
     <select id="selectCarById" parameterType="String" resultType="com.deepcloud.been.Car">
         SELECT * FROM car WHERE carID = #{carID};
     </select>
+    <select id="findAllCarsByBrandAndPrice" resultType="com.deepcloud.been.Car">
+        SELECT * FROM car
+        <where>
+            <if test="carBrand != ''">
+                carBrand = #{carBrand} AND
+            </if>
+            <if test="highPrice != 0">
+                originalPrice * discount between #{lowPrice} AND #{highPrice};
+            </if>
+        </where>
+    </select>
     <delete id="deleteCar" parameterType="String">
         DELETE FROM car WHERE carID = #{carID};
     </delete>

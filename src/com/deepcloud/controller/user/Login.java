@@ -41,6 +41,7 @@ public class Login extends javax.servlet.http.HttpServlet {
         if (!user.getUserPassword().equals(userPassword)) {
             // 密码不对，跳转回原来的界面
         }
+        request.getSession().setAttribute("userName", userName);
         // 验证是否从管理员界面过来
         if (from) {
             if (user.getIsManager() == 1) {
