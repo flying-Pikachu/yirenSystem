@@ -41,7 +41,7 @@ public class Register extends javax.servlet.http.HttpServlet {
         int isInsert = userMapper.insertUser(user);
         if (isInsert == 1) {
             // 插入成功
-            
+
         } else {
             // 插入失败
 
