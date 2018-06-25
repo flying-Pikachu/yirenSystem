@@ -9,9 +9,7 @@ import java.util.List;
 /**
  * @ Author     ：xzp.
  * @ Date       ：Created in 下午6:30 2018/6/25
- * @ Description：${description}
- * @ Modified By：
- * @Version: $version$
+ * @ Description：这个接口封装了关于车辆操作的方法
  */
 public interface CarMapper {
 

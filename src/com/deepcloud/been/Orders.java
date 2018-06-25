@@ -11,6 +11,7 @@ public class Orders {
 
     private String orderNum;
     private String carID;
+    private String userName;
     private Date pickupTime;
     private Date returnTime;
     private boolean orderStatus;
@@ -21,13 +22,22 @@ public class Orders {
 
     }
 
-    public Orders(String orderNum, String carID, Date pickupTime, Date returnTime, boolean orderStatus, double orderCost) {
+    public Orders(String orderNum, String carID, String userName, Date pickupTime, Date returnTime, boolean orderStatus, double orderCost) {
         this.orderNum = orderNum;
         this.carID = carID;
+        this.userName = userName;
         this.pickupTime = pickupTime;
         this.returnTime = returnTime;
         this.orderStatus = orderStatus;
         this.orderCost = orderCost;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getOrderNum() {
@@ -83,6 +93,7 @@ public class Orders {
         return "Orders{" +
                 "orderNum='" + orderNum + '\'' +
                 ", carID='" + carID + '\'' +
+                ", userName='" + userName + '\'' +
                 ", pickupTime=" + pickupTime +
                 ", returnTime=" + returnTime +
                 ", orderStatus=" + orderStatus +

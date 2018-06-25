@@ -53,6 +53,7 @@
         <!--<mapper resource="com/deepcloud/mapper/UserMapper.xml"/>-->
         <mapper class="com.deepcloud.mapper.UserMapper"/>
         <mapper class="com.deepcloud.mapper.CarMapper"/>
+        <mapper class="com.deepcloud.mapper.OrderMapper"/>
         <!--<package name="com.deepcloud.mapper"/>-->
     </mappers>
 </configuration>

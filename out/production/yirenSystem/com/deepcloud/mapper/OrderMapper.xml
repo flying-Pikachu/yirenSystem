@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
+注意：使用mapper代理方法开发，namespace有特殊重要的作用
+-->
+<mapper namespace="com.deepcloud.mapper.OrderMapper">
+
+    <select id="findAllOrders" resultType="com.deepcloud.been.Orders">
+        SELECT * FROM `order`;
+    </select>
+    <select id="findAllOrdersByUserName" parameterType="String" resultType="com.deepcloud.been.Orders">
+        SELECT * FROM `order` WHERE userName = #{userName};
+    </select>
+    <select id="selectOrderById" parameterType="String" resultType="com.deepcloud.been.Orders">
+        SELECT  * FROM `order` WHERE orderNum = #{orderNum};
+    </select>
+    <delete id="deleteOrder" parameterType="String">
+        DELETE FROM `order` WHERE orderNum = #{orderNum};
+    </delete>
+    <update id="updateOrder">
+        UPDATE `order` SET carID=#{order.carID}
+                     , userName=#{order.userName}
+                     , pickupTime=#{order.pickupTime}
+                     , returnTime=#{order.returnTime}
+                     , orderStatus=#{order.orderStatus}
+                     , orderCost=#{order.orderCost}
+                    WHERE
+                    orderNum=#{order.orderNum};
+    </update>
+    <insert id="insertOrder">
+-- INSERT INTO `yiren`.`order` (`orderNum`, `carID`, `pickupTime`, `returnTime`, `orderStatus`, `orderCost`) VALUES ('2', '2', '2018-06-25', '2018-06-27', '0', '2');
+
+        INSERT INTO `order`(orderNum
+                        , carID
+                        , userName
+                        , pickupTime
+                        , returnTime
+                        , orderStatus
+                        , orderCost)
+                      VALUES (
+                          #{order.orderNum}
+                        , #{order.carID}
+                        , #{order.userName}
+                        , #{order.pickupTime}
+                        , #{order.returnTime}
+                        , #{order.orderStatus}
+                        , #{order.orderCost}
+                        )
+    </insert>
+
+
+</mapper>
