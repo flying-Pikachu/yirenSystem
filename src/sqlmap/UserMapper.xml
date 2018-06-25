@@ -22,6 +22,19 @@
     <select id="findAllUsers" resultType="com.deepcloud.been.User">
         SELECT * FROM user;
     </select>
+    <select id="isManager" parameterType="String" resultType="com.deepcloud.been.User">
+        SELECT * FROM user WHERE userName = #{userName};
+    </select>
+    <insert id="insertUser">
+        INSERT INTO user(userName
+                        ,userPassword
+                        ,isManage)
+                    VALUES (
+                            #{userName}
+                          , #{userPassword}
+                          , #{isManager}
+                    )
+    </insert>
 
 
 </mapper>

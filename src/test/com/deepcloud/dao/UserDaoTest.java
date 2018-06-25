@@ -30,6 +30,7 @@ public void after() throws Exception {
 @Test
 public void testIsManager() throws Exception { 
 //TODO: Test goes here...
+    UserDao.isManager("1");
 
 } 
 

@@ -1,7 +1,9 @@
 package com.deepcloud.dao;
 
 import com.deepcloud.been.User;
+import com.deepcloud.util.MyBatisConf;
 import com.rock.util.JDBCUtil;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -14,47 +16,36 @@ import java.util.List;
 /**
  * @ Author     ：xzp.
  * @ Date       ：Created in 上午9:53 2018/6/25
- * @ Description：${description}
- * @ Modified By：
- * @Version: $version$
+ * @ Description：管理软件用户的操作
  */
 public class UserDao {
 
+    /**
+     * create by: xzp
+     * description: 这个方法通过用户名查找是否是管理员账号，从而判断是否能登录进管理员界面
+     * create time: 下午12:47 2018/6/25
+     *
+     * @param userName 需要验证的登录用户的名字
+     * @return boolean
+     */
     public static boolean isManager(String userName) {
-        JDBCUtil util = new JDBCUtil();
-        System.out.println(userName);
-        String sql = "SELECT * FROM user WHERE userName = ?";
-
-        for (User u : util.query(User.class, sql, userName))
+        List<User> list = MyBatisConf.search(User.class, "test.isManager", userName);
+        for (User u : list)
             System.out.println(u.toString());
         return true;
     }
 
-    public void findAllUsers() throws IOException {
-
-        // mybatis配置文件
-        String resource = "SqlMapConfig.xml";
-        // 得到配置文件流
-        InputStream inputStream = Resources.getResourceAsStream(resource);
-
-        // 创建会话工厂，传入mybatis的配置文件信息
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
-                .build(inputStream);
-
-        // 通过工厂得到SqlSession
-        SqlSession sqlSession = sqlSessionFactory.openSession();
-
-        // 通过SqlSession操作数据库
-        // 第一个参数：映射文件中statement的id，等于=namespace+"."+statement的id
-        // 第二个参数：指定和映射文件中所匹配的parameterType类型的参数
-        // sqlSession.selectOne结果 是与映射文件中所匹配的resultType类型的对象
-        // selectOne查询出一条记录
-        List<User> list = sqlSession.selectList("test.findAllUsers");
+    /**
+     * create by: xzp
+     * description: 得到全部的user对象
+     * create time: 下午1:03 2018/6/25
+     *
+     * @return void
+     * @throws
+     */
+    public void findAllUsers() {
+        List<User> list = MyBatisConf.search(User.class, "test.findAllUsers", "");
         for (User user : list)
             System.out.println(user);
-
-        // 释放资源
-        sqlSession.close();
-
     }
 }
