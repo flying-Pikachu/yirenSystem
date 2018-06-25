@@ -6,19 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067fa48c-e6ad-4a7f-88f4-2751e137679d" name="Default" comment="commit DBHelper">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/test/com/deepcloud/dao/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/test/com/deepcloud/dao/UserDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sqlmap/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/deepcloud/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/deepcloud/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/deepcloud/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/deepcloud/dao/UserDaoTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="067fa48c-e6ad-4a7f-88f4-2751e137679d" name="Default" comment="commit DBHelper" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,8 +71,8 @@
       <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/deepcloud/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+            <state relative-caret-position="356">
+              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -547,7 +535,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9658000" />
+    <option name="totallyTimeSpent" value="9766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1439" height="823" extended-state="6" />
@@ -1017,8 +1005,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/deepcloud/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        <state relative-caret-position="356">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
