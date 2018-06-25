@@ -6,7 +6,7 @@
 <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
 注意：使用mapper代理方法开发，namespace有特殊重要的作用
 -->
-<mapper namespace="test">
+<mapper namespace="user">
 
     <select id="findAllUsers" resultType="com.deepcloud.been.User">
         SELECT * FROM user;

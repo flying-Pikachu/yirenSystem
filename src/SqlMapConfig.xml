@@ -27,9 +27,8 @@
         -->
         <package name="com.deepcloud.controller"/>
         <package name="com.deepcloud.been"/>
-        <package name="com.deepcloud.dao"/>
         <package name="com.deepcloud.util"/>
-        <package name="com.deepcloud.filter"/>
+        <package name="com.deepcloud.mapper"/>
 
 
     </typeAliases>
@@ -52,5 +51,7 @@
     <!-- 加载 映射文件 -->
     <mappers>
         <mapper resource="sqlmap/UserMapper.xml"/>
+        <mapper resource="sqlmap/CarMapper.xml"/>
+        <mapper resource="sqlmap/OrderMapper.xml"/>
     </mappers>
 </configuration>

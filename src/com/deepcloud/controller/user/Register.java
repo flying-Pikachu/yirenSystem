@@ -16,7 +16,7 @@ public class Register extends javax.servlet.http.HttpServlet {
         doGet(request, response);
     }
 
-    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
+    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) {
         String userName = "", userPassword = "";
 
         String getUserName = request.getParameter("userName");

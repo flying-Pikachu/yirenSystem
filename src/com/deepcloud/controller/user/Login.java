@@ -17,7 +17,7 @@ public class Login extends javax.servlet.http.HttpServlet {
         doGet(request, response);
     }
 
-    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
+    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) {
         String userName = "", userPassword = "";
         boolean from = false;
 
@@ -31,10 +31,7 @@ public class Login extends javax.servlet.http.HttpServlet {
 
         }
 
-        if (getFrom.equals("true"))
-            from = true;
-        else
-            from = false;
+        from = getFrom.equals("true");
 
         userName = getUserName;
         userPassword = getUserPassword;
