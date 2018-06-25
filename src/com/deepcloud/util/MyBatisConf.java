@@ -30,7 +30,7 @@ public class MyBatisConf {
      * @return java.util.List<T>
      * @throws IOException 当没有找到配置文件的时候
      */
-    public static <T>List<T> search(Class<T> c, String loc, String ...args) {
+    public static <T>SqlSession getSession(Class<T> c, String loc, String ...args) {
         // mybatis配置文件
         String resource = "SqlMapConfig.xml";
         // 得到配置文件流
@@ -48,13 +48,17 @@ public class MyBatisConf {
         // 通过工厂得到SqlSession
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        // 通过SqlSession操作数据库
-        // 第一个参数：映射文件中statement的id，等于=namespace+"."+statement的id
-        // 第二个参数：指定和映射文件中所匹配的parameterType类型的参数
-        // sqlSession.selectOne结果 是与映射文件中所匹配的resultType类型的对象
-        // selectOne查询出一条记录
-        List<T> list = sqlSession.selectList(loc, args[0]);
+        return sqlSession;
+    }
+
+    /**
+     * create by: xzp
+     * description: 关闭session
+     * create time: 下午2:20 2018/6/25
+     *
+     * @param sqlSession 需要关闭的session
+     */
+    public static void closeSession (SqlSession sqlSession) {
         sqlSession.close();
-        return list;
     }
 }

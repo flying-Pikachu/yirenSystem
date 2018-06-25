@@ -23,16 +23,16 @@
         SELECT * FROM user;
     </select>
     <select id="isManager" parameterType="String" resultType="com.deepcloud.been.User">
-        SELECT * FROM user WHERE userName = #{userName};
+        SELECT * FROM user WHERE userName = #{user.userName};
     </select>
     <insert id="insertUser">
         INSERT INTO user(userName
                         ,userPassword
                         ,isManage)
                     VALUES (
-                            #{userName}
-                          , #{userPassword}
-                          , #{isManager}
+                            #{user.userName}
+                          , #{user.userPassword}
+                          , #{user.isManager}
                     )
     </insert>
 
