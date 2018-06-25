@@ -6,12 +6,12 @@
 <!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
 注意：使用mapper代理方法开发，namespace有特殊重要的作用
 -->
-<mapper namespace="user">
+<mapper namespace="com.deepcloud.mapper.UserMapper">
 
     <select id="findAllUsers" resultType="com.deepcloud.been.User">
         SELECT * FROM user;
     </select>
-    <select id="aUser" parameterType="String" resultType="com.deepcloud.been.User">
+    <select id="selectUserById" parameterType="String" resultType="com.deepcloud.been.User">
         SELECT * FROM user WHERE userName = #{userName};
     </select>
     <delete id="deleteUser" parameterType="String">
@@ -23,7 +23,7 @@
     <insert id="insertUser">
         INSERT INTO user(userName
                         ,userPassword
-                        ,isManage)
+                        ,isManager)
                     VALUES (
                             #{user.userName}
                           , #{user.userPassword}

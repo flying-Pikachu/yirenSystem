@@ -36,9 +36,14 @@ public class Register extends javax.servlet.http.HttpServlet {
         userName = getUserName;
         userPassword = getUserPassword;
 
-        UserMapper userMapper = MyBatisConf.getMapper(UserMapper.class);
+        UserMapper userMapper = MyBatisConf.getSession().getMapper(UserMapper.class);
         User user = new User(userName, userPassword, 0);
-        int isInsert = userMapper.insertUser(user);
+        int isInsert = 0;
+        try {
+            isInsert = userMapper.insertUser(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         if (isInsert == 1) {
             // 插入成功
 

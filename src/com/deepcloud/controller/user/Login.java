@@ -36,18 +36,11 @@ public class Login extends javax.servlet.http.HttpServlet {
         userName = getUserName;
         userPassword = getUserPassword;
 
-        UserMapper userMapper = MyBatisConf.getMapper(UserMapper.class);
-        User user = null;
-        // 验证用户名密码
-        if (userMapper.isExist(userName)) {
-            user = userMapper.selectUserById(userName);
-            if (!user.getUserPassword().equals(userPassword)) {
-                // 密码不对，返回登录界面-用户或管理员
-            }
-        } else {
-            // 用户不存在，返回登录界面-用户或管理员
+        UserMapper userMapper = MyBatisConf.getSession().getMapper(UserMapper.class);
+        User user = userMapper.selectUserById(userName);
+        if (!user.getUserPassword().equals(userPassword)) {
+            // 密码不对，跳转回原来的界面
         }
-
         // 验证是否从管理员界面过来
         if (from) {
             if (user.getIsManager() == 1) {

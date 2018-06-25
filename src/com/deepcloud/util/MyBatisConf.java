@@ -1,8 +1,6 @@
 package com.deepcloud.util;
 
 
-import com.deepcloud.been.User;
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -10,7 +8,6 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 
 /**
  * @ Author     ：xzp.
@@ -25,7 +22,7 @@ public class MyBatisConf {
      * create time: 下午12:56 2018/6/25
      *
      * @return java.util.List<T>
-     * @throws IOException 当没有找到配置文件的时候
+     * @throws IOException 创建输入流失败
      */
     public static SqlSession getSession() {
         // mybatis配置文件
@@ -43,32 +40,7 @@ public class MyBatisConf {
                 .build(inputStream);
 
         // 通过工厂得到SqlSession
-        SqlSession sqlSession = sqlSessionFactory.openSession();
-
-        return sqlSession;
+        return sqlSessionFactory.openSession();
     }
 
-    /**
-     * create by: xzp
-     * description:
-     * create time: 下午2:49 2018/6/25
-     *
-     * @param c 想要得到的对象的类型
-     * @return T 返回对象的泛型
-     */
-    public static <T>T getMapper(Class<T> c) {
-        SqlSession sqlSession = getSession();
-        return sqlSession.getMapper(c);
-    }
-
-    /**
-     * create by: xzp
-     * description: 关闭session
-     * create time: 下午2:20 2018/6/25
-     *
-     * @param sqlSession 需要关闭的session
-     */
-    public static void closeSession (SqlSession sqlSession) {
-        sqlSession.close();
-    }
 }

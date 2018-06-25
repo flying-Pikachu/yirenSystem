@@ -50,8 +50,9 @@
 
     <!-- 加载 映射文件 -->
     <mappers>
-        <mapper resource="sqlmap/UserMapper.xml"/>
-        <mapper resource="sqlmap/CarMapper.xml"/>
-        <mapper resource="sqlmap/OrderMapper.xml"/>
+        <!--<mapper resource="com/deepcloud/mapper/UserMapper.xml"/>-->
+        <mapper class="com.deepcloud.mapper.UserMapper"/>
+        <mapper class="com.deepcloud.mapper.CarMapper"/>
+        <!--<package name="com.deepcloud.mapper"/>-->
     </mappers>
 </configuration>

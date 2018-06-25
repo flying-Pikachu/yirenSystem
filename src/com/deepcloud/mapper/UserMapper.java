@@ -16,7 +16,7 @@ public interface UserMapper {
      * @param user 想要添加的用户的信息
      * @return int 成功返回1，不成功返回0
      */
-    int insertUser(@Param("user") User user);
+    int insertUser(@Param("user") User user) throws Exception;
 
     /**
      * 修改用戶
@@ -44,27 +44,5 @@ public interface UserMapper {
      * @return java.util.List<T> 返回全部的用户信息
      */
     List<User> findAllUsers();
-
-    /**
-     * create by: xzp
-     * description: 查找某一个用户名是否存在
-     * create time: 下午2:22 2018/6/25
-     *
-     * @param userName 查询的用户的名字
-     * @return boolean
-     */
-    boolean isExist(@Param("userName") String userName);
-
-    /**
-     * create by: xzp
-     * description: 查找某一个用户名是否是管理员
-     * create time: 下午2:22 2018/6/25
-     *
-     * @param userName 查询的用户的名字
-     * @return boolean
-     */
-    boolean isManager(String userName);
-
-
 
 }
