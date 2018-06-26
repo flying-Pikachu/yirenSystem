@@ -1,0 +1,56 @@
+*{
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+.content{
+	width: 1000px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.title{
+	width: 900px;
+	height: 100px;
+	border: 1px solid #000000;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	font-stretch: expanded;
+	font-style: italic;
+	font-size: 30px;
+	color: lightseagreen;
+	font-family:"arial black";
+	letter-spacing: 3px;
+}
+.reservation{
+	width: 900px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin:5px;
+	border: 1px solid #000000;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 70px;
+}
+table td{
+	margin: 70px;
+	text-align: center;
+}
+.inputfield{
+	width: 250px;
+	height: 80px;
+	background-color:lightseagreen;
+	text-align: center;
+	color:#FFFFFF;
+}
+.operation{
+	width: 850px;
+	height: 250px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000000;
+}
