@@ -1,0 +1,57 @@
+*{
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+.content{
+	width: 1000px;
+	height: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.title{
+	width: 900px;
+	height: 100px;
+	margin:5px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000000;
+	font-stretch: expanded;
+	font-style: italic;
+	font-size: 30px;
+	color: lightseagreen;
+	font-family:"arial black";
+	letter-spacing: 3px;
+}
+.update-cars{
+	width:900px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000000;
+}
+.easy-update{
+	width:850px;
+	height: 400px;
+	margin:15px;
+	border:1px solid #000000;
+	padding: 10px;
+}
+.ti{
+	width: 100px;
+	height: 50px;
+	color: darkgreen;
+	font-size: 20px;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 5px;
+}
+.submit{
+	width: 150px;
+	background-color: darkcyan;
+	color: #FFFFFF;
+}
+.search{
+	padding: 10px;
+}

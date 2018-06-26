@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
+注意：使用mapper代理方法开发，namespace有特殊重要的作用
+-->
+<mapper namespace="com.deepcloud.mapper.CarMapper">
+
+    <select id="findAllCars" resultType="com.deepcloud.been.Car">
+        SELECT * FROM car;
+    </select>
+    <select id="findAllCarsByBrand" parameterType="String" resultType="com.deepcloud.been.Car">
+        SELECT * FROM car WHERE carBrand = #{carBrand};
+    </select>
+    <select id="selectCarById" parameterType="String" resultType="com.deepcloud.been.Car">
+        SELECT * FROM car WHERE carID = #{carID};
+    </select>
+    <select id="findAllCarsByBrandAndPrice" resultType="com.deepcloud.been.Car">
+        SELECT * FROM car
+        <where>
+            <if test="carBrand != ''">
+                carBrand = #{carBrand} AND
+            </if>
+            <if test="highPrice != 0">
+                originalPrice * discount between #{lowPrice} AND #{highPrice};
+            </if>
+        </where>
+    </select>
+    <delete id="deleteCar" parameterType="String">
+        DELETE FROM car WHERE carID = #{carID};
+    </delete>
+    <update id="updateCar">
+        UPDATE car SET carBrand=#{car.carBrand}
+                     , carModel=#{car.carModel}
+                     , carStruct=#{car.carStruct}
+                     , carDisplacement=#{car.carDisplacement}
+                     , isManual=#{car.isManual}
+                     , maxMum=#{car.maxMum}
+                     , originalPrice=#{car.originalPrice}
+                     , discount=#{car.discount}
+                    WHERE
+                    carID=#{car.carID};
+    </update>
+    <insert id="insertCar">
+        INSERT INTO car(carID
+                      , carBrand
+                      , carModel
+                      , carStruct
+                      , carDisplacement
+                      , isManual
+                      , maxMum
+                      , originalPrice
+                      , discount)
+                      VALUES (
+                          #{car.carID}
+                        , #{car.carBrand}
+                        , #{car.carModel}
+                        , #{car.carStruct}
+                        , #{car.carDisplacement}
+                        , #{car.isManual}
+                        , #{car.maxMum}
+                        , #{car.originalPrice}
+                        , #{car.discount}
+                        )
+    </insert>
+
+
+</mapper>
