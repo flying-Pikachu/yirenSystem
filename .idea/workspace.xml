@@ -6,20 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067fa48c-e6ad-4a7f-88f4-2751e137679d" name="Default" comment="commit DBHelper">
-      <change afterPath="$PROJECT_DIR$/web/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/UserLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/UserRegister.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/UserLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/UserRegister.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
-    </list>
+    <list default="true" id="067fa48c-e6ad-4a7f-88f4-2751e137679d" name="Default" comment="commit DBHelper" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -100,8 +87,11 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="264">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -561,7 +551,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55376000" />
+    <option name="totallyTimeSpent" value="55756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
@@ -950,8 +940,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="264">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
