@@ -15,7 +15,12 @@
         SELECT * FROM `order` WHERE userName = #{userName};
     </select>
     <select id="selectOrderById" parameterType="String" resultType="com.deepcloud.been.Orders">
-        SELECT  * FROM `order` WHERE orderNum = #{orderNum};
+        SELECT  * FROM `order`
+        <where>
+            <if test="orderNum != ''">
+                orderNum = #{orderNum};
+            </if>
+        </where>
     </select>
     <delete id="deleteOrder" parameterType="String">
         DELETE FROM `order` WHERE orderNum = #{orderNum};

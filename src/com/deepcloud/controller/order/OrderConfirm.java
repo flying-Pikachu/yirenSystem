@@ -38,7 +38,7 @@ public class OrderConfirm extends HttpServlet {
                     orders.setOrderStatus(3);
                     orderMapper.updateOrder(orders);
                     // 跳回管理员查看界面，并刷新状态
-
+                    // 根据orderNum获得当前的返回订单信息
                 }
             } catch (Exception e) {
                 e.printStackTrace();

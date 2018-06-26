@@ -59,7 +59,32 @@ public class GetCars extends HttpServlet {
 
         } else {
             // 从用户端跳转过来
+            double lowPrice = 0, highPrice = 0;
 
+            String getCarBrand = request.getParameter("carBrand"),
+                    getLowPrice = request.getParameter("lowPrice"),
+                    getHighPrice = request.getParameter("highPrice");
+
+            if (getCarBrand != null)
+                carBrand = getCarBrand;
+
+            if (getLowPrice.equals(""))
+                lowPrice = 0;
+            else
+                lowPrice = Double.valueOf(getLowPrice);
+            if (getHighPrice.equals(""))
+                highPrice = 0;
+            else
+                highPrice = Double.valueOf(getHighPrice);
+            if (highPrice < lowPrice)
+                // 输入有误，返回用户端查询界面
+                System.out.println();
+            else {
+                SqlSession sqlSession = MyBatisConf.getSession();
+                CarMapper carMapper = sqlSession.getMapper(CarMapper.class);
+                List<Car> list = carMapper.findAllCarsByBrandAndPrice(carBrand, lowPrice, highPrice);
+                // 得到list，返回界面
+            }
         }
     }
 }

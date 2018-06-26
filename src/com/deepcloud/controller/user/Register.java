@@ -46,6 +46,7 @@ public class Register extends javax.servlet.http.HttpServlet {
         }
         if (isInsert == 1) {
             // 插入成功
+            request.getSession().setAttribute("userName", userName);
 
         } else {
             // 插入失败

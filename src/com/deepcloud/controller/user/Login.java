@@ -47,9 +47,11 @@ public class Login extends javax.servlet.http.HttpServlet {
             if (user.getIsManager() == 1) {
                 // 从管理员界面跳转并且是管理员
                 // 管理员界面
+
             } else {
                 // 不是管理员
                 // 管理员登录界面
+                // 获取全部的可用车辆信息
             }
         }
 
