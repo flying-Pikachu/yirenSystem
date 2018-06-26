@@ -7,31 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="067fa48c-e6ad-4a7f-88f4-2751e137679d" name="Default" comment="commit DBHelper">
-      <change afterPath="$PROJECT_DIR$/web/UserLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/yirenSystem_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/yirenSystem_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jbit.log" beforeDir="false" afterPath="$PROJECT_DIR$/jbit.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/WEB-INF/classes/test/com/deepcloud/util/DBHelperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/UserLogin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/UserRegister.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/car/GetCars.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/car/GetCars.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/order/GetOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/order/GetOrders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/order/InsertOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/order/InsertOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/order/UpdateOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/order/UpdateOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/user/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/user/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/controller/user/Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yirenSystem/com/deepcloud/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/yirenSystem_war_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/UserLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/UserRegister.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/ManagerAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ManagerAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/ManagerFrontPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ManagerFrontPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/ManagerLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ManagerLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/ManagerModify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ManagerModify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/ManagerUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ManagerUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/UserExchange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/UserExchange.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/UserLogin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/UserOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/UserOrder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/UserRegister.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/UserRegister.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,11 +70,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserLogin.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/UserLogin.jsp">
+      <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="285">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -95,17 +91,26 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="209">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="68">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,6 +125,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -180,16 +186,21 @@
         <option value="$PROJECT_DIR$/src/com/deepcloud/controller/order/InsertOrder.java" />
         <option value="$PROJECT_DIR$/src/com/deepcloud/controller/order/UpdateOrder.java" />
         <option value="$PROJECT_DIR$/src/com/deepcloud/controller/car/GetCars.java" />
-        <option value="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" />
         <option value="$PROJECT_DIR$/src/com/deepcloud/mapper/OrderMapper.xml" />
-        <option value="$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java" />
         <option value="$PROJECT_DIR$/src/com/deepcloud/controller/order/GetOrders.java" />
         <option value="$PROJECT_DIR$/src/com/deepcloud/controller/order/CancelOrder.java" />
         <option value="$PROJECT_DIR$/src/com/deepcloud/controller/order/OrderConfirm.java" />
         <option value="$PROJECT_DIR$/src/SqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/web/jsp/UserLogin.jsp" />
+        <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/UserLogin.jsp" />
+        <option value="$PROJECT_DIR$/web/UserRegister.jsp" />
+        <option value="$PROJECT_DIR$/web/Register.jsp" />
+        <option value="$PROJECT_DIR$/web/Register.html" />
+        <option value="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/Login.html" />
+        <option value="$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java" />
       </list>
     </option>
   </component>
@@ -242,6 +253,21 @@
               <item name="yirenSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="deepcloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yirenSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yirenSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="deepcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yirenSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yirenSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="deepcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yirenSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -535,10 +561,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53040000" />
+    <option name="totallyTimeSpent" value="55376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.20694445" side_tool="true" weight="0.32928476" />
@@ -646,11 +673,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3c6a332b-6888-4a0a-bb9d-ce10de8a995a/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/user" />
-    <entry file="file://$PROJECT_DIR$/src/log4j2.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/com/deepcloud/util/DBHelperTest.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/mybatis-3.4.6.jar!/org/apache/ibatis/builder/xml/mybatis-3-config.dtd">
       <provider selected="true" editor-type-id="text-editor">
@@ -796,16 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/order/InsertOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -886,32 +898,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java">
+    <entry file="file://$PROJECT_DIR$/jbit.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="-13091" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/UserRegister.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jbit.log">
+    <entry file="file://$PROJECT_DIR$/web/Register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13091" />
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="209">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/UserLogin.jsp">
+    <entry file="file://$PROJECT_DIR$/web/Login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="285">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

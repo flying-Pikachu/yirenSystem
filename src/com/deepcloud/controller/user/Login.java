@@ -3,8 +3,8 @@ package com.deepcloud.controller.user;
 import com.deepcloud.been.User;
 import com.deepcloud.mapper.UserMapper;
 import com.deepcloud.util.MyBatisConf;
-import org.apache.ibatis.session.SqlSession;
 
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 /**
@@ -12,12 +12,14 @@ import java.io.IOException;
  * @ Date       ：Created in 下午2:26 2018/6/25
  * @ Description：这个Servlet用来处理登录请求
  */
+@WebServlet(name = "/Login")
 public class Login extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         doGet(request, response);
     }
 
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) {
+        System.out.println("进入");
         String userName = "", userPassword = "";
         boolean from = false;
 
@@ -36,11 +38,14 @@ public class Login extends javax.servlet.http.HttpServlet {
         userName = getUserName;
         userPassword = getUserPassword;
 
+        System.out.println(userName + " " + userPassword + " " + from);
+
         UserMapper userMapper = MyBatisConf.getSession().getMapper(UserMapper.class);
         User user = userMapper.selectUserById(userName);
         if (!user.getUserPassword().equals(userPassword)) {
             // 密码不对，跳转回原来的界面
         }
+
         request.getSession().setAttribute("userName", userName);
         // 验证是否从管理员界面过来
         if (from) {
