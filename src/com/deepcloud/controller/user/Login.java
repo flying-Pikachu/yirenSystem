@@ -4,6 +4,7 @@ import com.deepcloud.been.User;
 import com.deepcloud.mapper.UserMapper;
 import com.deepcloud.util.MyBatisConf;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
@@ -44,6 +45,13 @@ public class Login extends javax.servlet.http.HttpServlet {
         User user = userMapper.selectUserById(userName);
         if (!user.getUserPassword().equals(userPassword)) {
             // 密码不对，跳转回原来的界面
+            try {
+                request.getRequestDispatcher("Login.html?userName="+userName).forward(request, response);
+            } catch (ServletException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         request.getSession().setAttribute("userName", userName);
