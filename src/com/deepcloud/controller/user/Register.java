@@ -4,6 +4,7 @@ import com.deepcloud.been.User;
 import com.deepcloud.mapper.UserMapper;
 import com.deepcloud.util.MyBatisConf;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
@@ -18,7 +19,8 @@ public class Register extends javax.servlet.http.HttpServlet {
         doGet(request, response);
     }
 
-    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) {
+    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws IOException, ServletException {
+        System.out.println("进入注册");
         String userName = "", userPassword = "";
 
         String getUserName = request.getParameter("userName");
@@ -39,20 +41,26 @@ public class Register extends javax.servlet.http.HttpServlet {
         userPassword = getUserPassword;
 
         UserMapper userMapper = MyBatisConf.getSession().getMapper(UserMapper.class);
-        User user = new User(userName, userPassword, 0);
-        int isInsert = 0;
-        try {
-            isInsert = userMapper.insertUser(user);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        if (isInsert == 1) {
-            // 插入成功
-            request.getSession().setAttribute("userName", userName);
-
+        User user = userMapper.selectUserById(userName);
+        if (user != null) {
+            response.sendRedirect("Register.html?isUsed=true");
         } else {
-            // 插入失败
-
+            user = new User(userName, userPassword, 0);
+            System.out.println(user);
+            int isInsert = 0;
+            try {
+                isInsert = userMapper.insertUser(user);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            if (isInsert == 1) {
+                // 插入成功
+                request.getSession().setAttribute("userName", userName);
+                request.getRequestDispatcher("").forward(request, response);
+            } else {
+                // 插入失败
+                response.sendRedirect("Register.html?isUsed=false");
+            }
         }
     }
 }

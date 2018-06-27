@@ -4,13 +4,32 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Insert title here</title>
     <link rel="stylesheet" type="text/css" href="css/UserRegister.css"/>
+    <script type="text/javascript" src="js/necessaryMethod.js"></script>
     <script type="text/javascript">
         function onClicked() {
             var telephone = document.getElementById("telephone").value;
             var userName = document.getElementById("userName").value;
             var userPassword = document.getElementById("userPassword").value;
             var userPasswordVerification = document.getElementById("userPasswordVerification").value;
-            alert(telephone + " " + userName + " " + userPassword + " " + userPasswordVerification);
+
+            if (telephone.length == 0)
+                alert("telephone不能为空");
+            else if (userName.length == 0)
+                alert("userName不能为空");
+            else if (userPassword.length == 0)
+                alert("userPassword不能为空");
+            else if (userPasswordVerification.length == 0)
+                alert("userPasswordVerification不能为空");
+            else
+                document.myform.submit();
+        }
+    </script>
+    <script type="text/javascript">
+        var userName = getQueryString("isUsed");
+        if (userName == "true") {
+            alert("用户名已经存在，请重新输入");
+        } else if (userName == "false") {
+            alert("插入失败，请重新插入");
         }
     </script>
 </head>
@@ -21,7 +40,7 @@
         <div>如果您已是会员，请点击<a href="Login.html">登录</a></div>
     </div>
     <div class="sign-up">
-        <form action="/Register" method="post">
+        <form action="Register" method="post" name="myform">
             <table border="0">
                 <tr>
                     <td>
@@ -51,7 +70,7 @@
                     <td><input type="checkbox" checked="checked">我已阅读《易人租车会员服务条款》</td>
                 </tr>
                 <tr>
-                    <td ><input type="submit" value="注册" onclick="onClicked()" class="submit"></td>
+                    <td ><input type="button" value="注册" onclick="onClicked()" class="submit"></td>
                 </tr>
             </table>
         </form>

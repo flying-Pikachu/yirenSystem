@@ -17,10 +17,16 @@
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
 
-    <!--<servlet>-->
-        <!--<servlet-name>Register</servlet-name>-->
-        <!--<servlet-class>com.deepcloud.controller.user.Register</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.deepcloud.controller.user.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+
+
     <!--<servlet>-->
         <!--<servlet-name>GetOrders</servlet-name>-->
         <!--<servlet-class>com.deepcloud.controller.order.GetOrders</servlet-class>-->
@@ -32,11 +38,6 @@
 
 
 
-
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>Register</servlet-name>-->
-        <!--<url-pattern>/Register</url-pattern>-->
-    <!--</servlet-mapping>-->
     <!--<servlet-mapping>-->
         <!--<servlet-name>GetOrders</servlet-name>-->
         <!--<url-pattern>/GetOrders</url-pattern>-->
