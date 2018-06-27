@@ -7,10 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="067fa48c-e6ad-4a7f-88f4-2751e137679d" name="Default" comment="commit DBHelper">
-      <change beforePath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/FrontPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/OrderCenter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/OrderDelete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/OrderModigy.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/FrontPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/OrderCenter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/OrderDelete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/OrderModify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,85 +60,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-              <folding>
-                <element signature="e#261#285#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="car" pinned="false" current-in-tab="false">
-        <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/car">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="false">
-        <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="necessaryMethod.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/necessaryMethod.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManagerAdd.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/ManagerAdd.jsp">
+      <file leaf-file-name="FrontPage.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/FrontPage.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="FrontPage.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/FrontPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="408">
+              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -145,8 +81,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -174,8 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/com/deepcloud/util/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/test/com/deepcloud/util/DBHelperTest.java" />
         <option value="$PROJECT_DIR$/src/com/deepcloud/been/User.java" />
         <option value="$PROJECT_DIR$/src/DB.properties" />
@@ -223,6 +157,10 @@
         <option value="$PROJECT_DIR$/web/Login.html" />
         <option value="$PROJECT_DIR$/web/Register.html" />
         <option value="$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java" />
+        <option value="$PROJECT_DIR$/web/OrderModigy.jsp" />
+        <option value="$PROJECT_DIR$/web/OrderCenter.jsp" />
+        <option value="$PROJECT_DIR$/web/OrderDelete.jsp" />
+        <option value="$PROJECT_DIR$/web/FrontPage.jsp" />
       </list>
     </option>
   </component>
@@ -301,6 +239,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/src/com/deepcloud/mapper" />
       <recent name="$PROJECT_DIR$/src/sqlmap" />
@@ -310,6 +249,7 @@
       <recent name="com.deepcloud.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/css" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/web" />
     </key>
@@ -557,7 +497,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64212000" />
+    <option name="totallyTimeSpent" value="64780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -581,12 +521,12 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.79305553" visible="true" weight="0.3518268" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.79305553" weight="0.3518268" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49791667" weight="0.32928476" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32931727" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49686846" visible="true" weight="0.16458334" />
-      <window_info id="Web" order="6" sideWeight="0.5031315" side_tool="true" visible="true" weight="0.16458334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75403225" visible="true" weight="0.16458334" />
+      <window_info id="Web" order="6" sideWeight="0.24596775" side_tool="true" visible="true" weight="0.16458334" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989576" visible="true" weight="0.32882273" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -613,9 +553,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49930555" weight="0.32841823" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32931727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989576" weight="0.32931727" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49930555" weight="0.39519358" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info id="Designer" order="2" />
@@ -670,23 +610,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/deepcloud/util/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="29" column="1" selection-start-line="28" selection-start-column="5" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/mybatis-3.4.6.jar!/org/apache/ibatis/io/Resources.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/deepcloud/dao/UserDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/com/deepcloud/dao/UserDaoTest.java" />
-    <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/user" />
     <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/user" />
     <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/user" />
     <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/user" />
@@ -889,13 +812,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/UserRegister.jsp" />
     <entry file="file://$PROJECT_DIR$/web/index.html" />
-    <entry file="file://$PROJECT_DIR$/web/js/necessaryMethod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/ManagerAdd.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -906,6 +822,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/car">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -913,10 +836,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://3c6a332b-6888-4a0a-bb9d-ce10de8a995a/schema/yiren/table/car">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/web/js/necessaryMethod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <element signature="e#261#285#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -934,23 +877,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Register.html">
+    <entry file="file://$PROJECT_DIR$/web/OrderModigy.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="e#261#285#0" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/deepcloud/controller/user/Register.java">
+    <entry file="file://$PROJECT_DIR$/web/OrderCenter.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="351">
+          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/OrderDelete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/FrontPage.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/FrontPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
         </state>
       </provider>
     </entry>
