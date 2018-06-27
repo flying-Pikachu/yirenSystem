@@ -14,14 +14,21 @@
 			</div>
 			<div class="manager-login">
 				<div class="login-content">
-					
-
 					<div class="description">
-					<form action="####" method="post">
+					<form action="Login?from=true" method="post">
 						<table border="0">
 						
 						<tr>
-							<td><label for="account">账号:</label><input type="text" name="account" id="account" placeholder="请输入账号" /></td>
+							<td>
+								<label for="account">账号:</label><input type="text" name="account" id="account" placeholder="请输入账号" />
+								<script type="text/javascript">
+                                    var userName = getQueryString("userName");
+                                    if (userName != null) {
+                                        alert("密码或者账号错误");
+                                        document.getElementById("userName").setAttribute('value', userName);
+                                    }
+								</script>
+							</td>
 						</tr>
 						<tr>
 							<td><label for="password">密码:</label><input type="text" name="password" id="password" placeholder="请输入密码" /></td>
