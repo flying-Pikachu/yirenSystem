@@ -23,6 +23,7 @@ public class Login extends javax.servlet.http.HttpServlet {
 
 
         System.out.println("进入");
+
         String userName = "", userPassword = "";
         boolean from = false;
 
@@ -31,9 +32,9 @@ public class Login extends javax.servlet.http.HttpServlet {
         String getFrom = request.getParameter("from");
 
         if (getUserName == null || getUserName.equals("")) {
-
+            response.sendRedirect("Login.html?userName=" + userName + "&from=false");
         } else if (getUserPassword == null || getUserPassword.equals("")) {
-
+            response.sendRedirect("Login.html?userName=" + userName + "&from=false");
         }
 
         from = getFrom.equals("true");
@@ -45,24 +46,32 @@ public class Login extends javax.servlet.http.HttpServlet {
 
         UserMapper userMapper = MyBatisConf.getSession().getMapper(UserMapper.class);
         User user = userMapper.selectUserById(userName);
+        boolean temp = false;
         if (!user.getUserPassword().equals(userPassword)) {
             // 密码不对，跳转回原来的界面
-            response.sendRedirect("Login.html?userName="+userName+"&from=false");
+            response.sendRedirect("Login.html?userName=" + userName);
+            temp = true;
         }
-
-        request.getSession().setAttribute("userName", userName);
-        // 验证是否从管理员界面过来
-        if (from) {
-            if (user.getIsManager() == 1) {
-                // 从管理员界面跳转并且是管理员
-                // 管理员界面
-
+        if (!temp) {
+            request.getSession().setAttribute("userName", userName);
+            // 验证是否从管理员界面过来
+            if (from) {
+                if (user.getIsManager() == 1) {
+                    // 从管理员界面跳转并且是管理员
+                    // 管理员界面
+                    response.sendRedirect("ManagerFrontPage.html");
+                } else {
+                    // 从管理员界面跳转不是管理员
+                    // 跳转回管理员登录界面
+                    response.sendRedirect("Login.html?userName=" + userName);
+                }
             } else {
-                // 不是管理员
-                // 管理员登录界面
+                // 不是管理员登录界面跳转过来的
+                // 主界面
                 // 获取全部的可用车辆信息
+                System.out.println("密码正确，可以跳转");
+                response.sendRedirect("FrontPage.jsp");
             }
         }
-
     }
 }

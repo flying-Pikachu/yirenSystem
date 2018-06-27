@@ -26,6 +26,15 @@
         <url-pattern>/Register</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Test</servlet-name>
+        <servlet-class>com.deepcloud.controller.user.Test</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test</servlet-name>
+        <url-pattern>/Test</url-pattern>
+    </servlet-mapping>
+
 
     <!--<servlet>-->
         <!--<servlet-name>GetOrders</servlet-name>-->

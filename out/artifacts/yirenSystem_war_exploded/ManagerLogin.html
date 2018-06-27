@@ -1,11 +1,10 @@
-<%@page contentType="text/html"%>
-<%@page pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link rel="stylesheet" type="text/css" href="css/ManagerLogin.css"/>
+		<script src="js/necessaryMethod.js" type="text/javascript"></script>
     </head>
     <body>
     	<div class="content">
@@ -14,14 +13,21 @@
 			</div>
 			<div class="manager-login">
 				<div class="login-content">
-					
-
 					<div class="description">
-					<form action="####" method="post">
+					<form action="Login?from=true" method="post">
 						<table border="0">
 						
 						<tr>
-							<td><label for="account">账号:</label><input type="text" name="account" id="account" placeholder="请输入账号" /></td>
+							<td>
+								<label for="account">账号:</label><input type="text" name="account" id="account" placeholder="请输入账号" />
+								<script type="text/javascript">
+                                    var userName = getQueryString("userName");
+                                    if (userName != null) {
+                                        alert("密码或者账号错误或者账户并不是管理员账户");
+                                        document.getElementById("userName").setAttribute('value', userName);
+                                    }
+								</script>
+							</td>
 						</tr>
 						<tr>
 							<td><label for="password">密码:</label><input type="text" name="password" id="password" placeholder="请输入密码" /></td>

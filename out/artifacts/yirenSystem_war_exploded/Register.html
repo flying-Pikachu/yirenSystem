@@ -26,8 +26,10 @@
     </script>
     <script type="text/javascript">
         var userName = getQueryString("isUsed");
-        if (userName != null) {
+        if (userName == "true") {
             alert("用户名已经存在，请重新输入");
+        } else if (userName == "false") {
+            alert("插入失败，请重新插入");
         }
     </script>
 </head>
