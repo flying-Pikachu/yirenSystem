@@ -19,7 +19,9 @@ public class Login extends javax.servlet.http.HttpServlet {
         doGet(request, response);
     }
 
-    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) {
+    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws ServletException, IOException {
+
+
         System.out.println("进入");
         String userName = "", userPassword = "";
         boolean from = false;
@@ -45,13 +47,7 @@ public class Login extends javax.servlet.http.HttpServlet {
         User user = userMapper.selectUserById(userName);
         if (!user.getUserPassword().equals(userPassword)) {
             // 密码不对，跳转回原来的界面
-            try {
-                request.getRequestDispatcher("Login.html?userName="+userName).forward(request, response);
-            } catch (ServletException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            response.sendRedirect("Login.html?userName="+userName+"&from=false");
         }
 
         request.getSession().setAttribute("userName", userName);
